@@ -1,0 +1,10 @@
+version: '2'
+services:
+  pet-service:
+    container_name: pet-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pet-service:latest
+    ports:
+    - 21991:8080
